@@ -307,6 +307,7 @@ p {
 
 .card {
   padding: 28px;
+  position: relative;
 }
 
 .card.featured {
@@ -328,7 +329,14 @@ p {
   color: var(--teal-dark);
   font-size: 12px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 0;
+}
+
+.card .tag {
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  box-shadow: 0 8px 18px rgba(19, 35, 52, 0.08);
 }
 
 .card ul,
@@ -341,8 +349,11 @@ p {
   line-height: 1.8;
 }
 
-.card .button {
+.card-actions {
   margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .feature-grid {
@@ -658,5 +669,9 @@ p {
 
   .button {
     width: 100%;
+  }
+
+  .card-actions {
+    grid-template-columns: 1fr;
   }
 }
