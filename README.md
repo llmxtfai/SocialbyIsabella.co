@@ -1,13 +1,6 @@
 # Social by Isabella
 
-React and Tailwind CSS website for Social by Isabella.
-
-## Development
-
-```bash
-npm install
-npm run dev
-```
+Static HTML website for Social by Isabella.
 
 ## Deployment
 
