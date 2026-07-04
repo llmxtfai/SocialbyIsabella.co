@@ -512,6 +512,7 @@ p {
 }
 
 .contact-actions .button.secondary {
+  background: transparent;
   color: white;
   border-color: rgba(255, 255, 255, 0.7);
 }
